@@ -1,2 +1,2 @@
 #!/bin/sh                                                                                                                                                                     
-                                                                                                                                                                              docker build -t docker.brainfood.com/head:latest .                                                                                                                    
+docker build -t docker.brainfood.com/head:latest .                                                                                                                    

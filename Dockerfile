@@ -1,4 +1,4 @@
-ROM ros:indigo
+FROM ros:indigo
 
 #NVIDIA stuff
 LABEL com.nvidia.volumes.needed="nvidia_driver"
@@ -16,3 +16,5 @@ RUN /tmp/head-install-scripts/head.sh
 
 RUN adduser --disabled-password --uid "1000" --gecos ",,," --home "/home/user" --shell "/bin/bash" "user" && \
     echo "user:password" | chpasswd
+
+COPY lib/default.pa /root/.pulse/default.pa
